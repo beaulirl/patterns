@@ -53,6 +53,7 @@ def choose_type():
         note = NewsNote()
     return note
 
+
 article_text = 'This article is about Python'
 choose_type().create_note(article_text).make_note()
 

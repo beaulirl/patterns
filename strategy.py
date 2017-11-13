@@ -57,6 +57,7 @@ class Context(object):
     def execute_strategy(self, input_array):
         return self.strategy.algorithm(input_array)
 
+
 if __name__ == '__main__':
     array = [10, 8, 15, 65, 23]
 
