@@ -27,8 +27,8 @@ def make_xml():
     return root
 
 
-for s in range(1, 5):
+for s in range(1, 50):
     with ZipFile('{}.zip'.format(s), 'w') as xml_zip:
-        for n in range(1, 5):
+        for n in range(1, 100):
             xml_file_name = '{}.xml'.format(n)
             xml_zip.writestr(xml_file_name, etree.tostring(make_xml()).decode('utf-8'))
